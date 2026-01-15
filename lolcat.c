@@ -179,7 +179,7 @@ static void usage(void)
 
 static void version(void)
 {
-    wprintf(L"lolcat version 1.5, (c) 2024 jaseg\n");
+    wprintf(L"lolcat version 9.1, (c) 2026 expldfsh\n");
     exit(0);
 }
 
