@@ -213,7 +213,7 @@ int main(int argc, char** argv)
 
     struct timeval tv;
     gettimeofday(&tv, NULL);
-    double offx = (tv.tv_sec % 300) / 300.0;
+    double offx = (tv.tv_usec % 100000) / 100000.0;
 
     for (i = 1; i < argc; i++) {
         char* endptr;
