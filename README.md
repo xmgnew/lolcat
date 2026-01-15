@@ -1,12 +1,12 @@
-# What?
+## About this fork
 
-![](./LOLCat-Rainbow.jpg)
+The original `c-lolcat` uses a time-based offset to determine the color phase.
+When the program is invoked multiple times within a very short time window,
+the generated color gradient remains the same.
 
-## Screenshot
-
-![](./screenshot.png)
-
-![](./sl.gif)
+This fork fixes that behavior by introducing a higher-resolution source for the
+color offset, ensuring that each invocation produces a different color pattern,
+even when called repeatedly in rapid succession.
 
 ## Installation 
 
