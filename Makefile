@@ -13,7 +13,7 @@ debug: all
 .PHONY: install clean debug
 
 xterm256lut.h: xterm256lut_gen.py
-	python $< > $@
+	python3 $< > $@
 
 lolcat: lolcat.c xterm256lut.h
 	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@ $< $(LIBS)
